@@ -16,6 +16,8 @@ public class MyFilterConfig {
         registrationBean.setFilter(new MyNewFilter());
         registrationBean.addUrlPatterns("/customers/*");
 
+        System.out.println("FilterRegistratio  nBean ............");
+
         return registrationBean;
     }
 }

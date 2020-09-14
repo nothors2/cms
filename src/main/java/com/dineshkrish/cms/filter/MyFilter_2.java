@@ -16,4 +16,13 @@ public class MyFilter_2 implements Filter {
         System.out.println("Filter 2 is called...");
         filterChain.doFilter(servletRequest, servletResponse);
     }
+
+    @Override
+    public String toString() {
+        return "MyFilter_2{}";
+    }
+
+    public MyFilter_2() {
+        System.out.println(toString());
+    }
 }

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import javax.servlet.*;
 import java.io.IOException;
 
-@Component
+//@Component
 public class MyNewFilter implements Filter {
 
     @Override
@@ -14,5 +14,13 @@ public class MyNewFilter implements Filter {
         System.out.println("The new filter is called..");
 
         filterChain.doFilter(servletRequest, servletResponse);
+    }
+
+    @Override
+    public String toString() {
+        return "MyNewFilter{}";
+    }
+    public MyNewFilter() {
+        System.out.println(toString());
     }
 }

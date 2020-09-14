@@ -7,7 +7,7 @@ import javax.servlet.*;
 import java.io.IOException;
 
 @Component
-@Order(1)
+@Order(4)
 public class MyFilter_3 implements Filter {
 
     @Override
@@ -15,5 +15,13 @@ public class MyFilter_3 implements Filter {
 
         System.out.println("Filter 3 is called...");
         filterChain.doFilter(servletRequest, servletResponse);
+    }
+
+    @Override
+    public String toString() {
+        return "MyFilter_3{}";
+    }
+    public MyFilter_3() {
+        System.out.println(toString());
     }
 }

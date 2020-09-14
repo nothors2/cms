@@ -22,8 +22,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         User.UserBuilder userBuilder = User.builder().passwordEncoder(encoder::encode);
 
         UserDetails user1 = userBuilder
-                .username("myuser1")
-                .password("password")
+                .username("admin")
+                .password("1111")
                 .roles("USER")
                 .build();
 
